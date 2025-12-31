@@ -1,0 +1,526 @@
+/* src/test.css */
+
+/* 테스트 선택 페이지 스타일 */
+.test-selection-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.test-selection-page h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.page-description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.wordbook-selection-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.wordbook-selection-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wordbook-selection-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wordbook-info {
+  flex: 1;
+}
+
+.wordbook-title {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.wordbook-description {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.wordbook-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.test-history-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.login-required-message {
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 500px;
+}
+
+.login-required-message h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.login-required-message p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.no-wordbooks {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 30px 0;
+  color: #666;
+}
+
+/* 테스트 페이지 스타일 */
+.test-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.test-intro {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.test-intro h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.test-info {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.test-info p {
+  margin-bottom: 10px;
+}
+
+.start-test-btn {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+}
+
+.no-test-words {
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.no-test-words h2 {
+  margin-bottom: 15px;
+  color: #dc3545;
+}
+
+.no-test-words p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* 테스트 문제 스타일 */
+.test-questions {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.test-progress {
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.question-container {
+  margin-bottom: 30px;
+}
+
+.question-word {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.question-text {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-button {
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: white;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.option-button:hover {
+  background-color: #f8f9fa;
+  border-color: #ced4da;
+}
+
+.option-button.correct {
+  background-color: rgba(40, 167, 69, 0.1);
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.option-button.incorrect {
+  background-color: rgba(220, 53, 69, 0.1);
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.answer-feedback {
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.answer-feedback.correct {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.answer-feedback.incorrect {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.correct-answer {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+/* 테스트 완료 스타일 */
+.test-finish {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.test-finish h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.test-result-summary {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* 테스트 결과 페이지 스타일 */
+.test-result-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.test-result {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.test-result h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.result-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.result-header h3 {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.result-date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.result-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.result-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.result-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.result-score {
+  color: #007bff;
+  font-size: 1.3rem;
+}
+
+.result-message {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.result-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.no-test-result {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* 테스트 기록 페이지 스타일 */
+.test-history-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.test-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.test-history-header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.test-history {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.test-history h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.wordbook-history {
+  margin-bottom: 30px;
+}
+
+.wordbook-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+  color: #333;
+  cursor: pointer;
+}
+
+.wordbook-title:hover {
+  color: #007bff;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th {
+  background-color: #f8f9fa;
+  padding: 12px;
+  text-align: left;
+  font-weight: 500;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.history-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eaeaea;
+  color: #333;
+}
+
+.history-item {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.history-item:hover {
+  background-color: #f8f9fa;
+}
+
+.test-score {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.no-test-history {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 30px 0;
+  color: #666;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .wordbook-selection-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .wordbook-selection-item button {
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  .result-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .result-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .result-actions {
+    flex-direction: column;
+  }
+  
+  .test-history-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .history-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .option-button {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  
+  .question-word {
+    font-size: 1.8rem;
+  }
+  
+  .test-info p {
+    font-size: 0.95rem;
+  }
+}

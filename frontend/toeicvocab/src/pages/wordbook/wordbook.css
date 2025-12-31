@@ -1,0 +1,272 @@
+/* src/wordbook.css */
+
+/* 단어장 목록 스타일 */
+.wordbook-list {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.wordbook-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wordbook-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.no-wordbooks {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 단어장 아이템 스타일 */
+.wordbook-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 10px 10px; /* 위아래 간격 10px */
+  cursor: pointer;
+}
+
+.wordbook-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wordbook-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wordbook-description {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.wordbook-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 10px;
+  /* border-top: 1px solid #eee; */
+  padding-top: 10px;
+}
+
+.wordbook-count {
+  font-weight: 500;
+}
+
+.wordbook-date {
+  color: #999;
+  margin: 0 15px;
+}
+
+/* 단어장 폼 스타일 */
+.wordbook-form {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.wordbook-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* 단어장 리스트 페이지 스타일 */
+.wordbook-list-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wordbook-list-page h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* 단어장 상세 페이지 스타일 */
+.wordbook-detail-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wordbook-header {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.wordbook-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.wordbook-description {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.wordbook-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* 단어 목록 스타일 */
+.word-list {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.no-words {
+  text-align: center;
+  padding: 30px;
+}
+
+/* 단어 상세 모달 스타일 */
+.word-detail {
+  padding: 20px;
+}
+
+.word-detail-text {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.word-detail-meaning {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.word-detail-example {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.word-detail-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 15px;
+  /* border-top: 1px solid #eee; */
+}
+
+.word-detail-difficulty {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* 단어 검색 스타일 */
+.word-search {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.word-search-form {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.search-input-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-select-group {
+  min-width: 150px;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .wordbook-list-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .word-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .wordbook-actions {
+    flex-direction: column;
+  }
+  
+  .word-search-form {
+    flex-direction: column;
+  }
+  
+  .search-input-group, .search-select-group {
+    width: 100%;
+  }
+  
+  .search-buttons {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wordbook-list-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .word-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-buttons {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}

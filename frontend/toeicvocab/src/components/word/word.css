@@ -1,0 +1,253 @@
+/* src/word.css (수정된 버전) */
+
+/* 단어 폼 스타일 */
+.word-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.word-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* 셀렉트 인풋 스타일 */
+.select-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.select-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* 단어 목록 스타일 */
+.word-list {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  overflow: visible; /* 스크롤 허용 */
+}
+
+.word-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.word-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  overflow: visible; /* 스크롤 허용 */
+}
+
+.no-words {
+  text-align: center;
+  padding: 30px;
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+/* 단어 아이템 스타일 수정 - 스크롤 문제 해결 */
+.word-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border-left: 4px solid #6c757d;
+  position: relative; /* 포지션 추가 */
+  overflow: visible; /* 오버플로우 허용 */
+  z-index: 1; /* z-인덱스 설정 */
+  transform-origin: center center; /* 변환 원점 설정 */
+  height: auto; /* 자동 높이 */
+  min-height: 100px; /* 최소 높이 설정 */
+}
+
+.word-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2; /* 호버 시 앞으로 나오도록 */
+}
+
+.word-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.word-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.word-difficulty {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.word-body {
+  margin-top: 10px;
+}
+
+.word-meaning {
+  font-size: 0.95rem;
+  color: #495057;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.word-example {
+  font-size: 0.85rem;
+  color: #6c757d;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* 난이도별 스타일 */
+.word-item.difficulty-easy {
+  border-left-color: #28a745;
+}
+
+.word-item.difficulty-easy .word-difficulty {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.word-item.difficulty-medium {
+  border-left-color: #ffc107;
+}
+
+.word-item.difficulty-medium .word-difficulty {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #d39e00;
+}
+
+.word-item.difficulty-hard {
+  border-left-color: #dc3545;
+}
+
+.word-item.difficulty-hard .word-difficulty {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+/* 단어 검색 스타일 */
+.word-search {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+}
+
+.search-form {
+  display: flex;
+  gap: 20px;
+  /* align-items: flex-end; */
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.select-group {
+  min-width: 150px;
+  flex-grow: 0;
+}
+
+.difficulty-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 15px;
+}
+.search-buttons button {
+  padding: 15px 15px;        /* 기본 padding 줄이기 */
+  font-size: 15px;         /* 글자 크기 줄이기 */
+  height: 40px;            /* 버튼 높이 줄이기 (선택) */
+}
+
+/* 컨테이너 스타일 수정 - 스크롤 문제 해결 */
+.wordbook-detail-page, 
+.word-list-page,
+.container,
+.main-content {
+  overflow: visible !important; /* 스크롤 허용 */
+}
+
+body {
+  overflow-y: auto !important; /* 스크롤 보장 */
+  min-height: 100vh;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .word-list-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .select-group {
+    width: 100%;
+  }
+  
+  .search-buttons {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .word-list-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-buttons {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  
+  .search-buttons {
+    flex-direction: column;
+  }
+}
