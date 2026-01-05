@@ -16,7 +16,6 @@ TOEIC 대비를 준비하는 대학생들이 체계적으로 단어를 암기하
 ## 협업 멤버
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/kkw8989"><img src="https://avatars.githubusercontent.com/kkw8989" width="100px;" alt=""/><br /><sub><b>kkw8989</b></sub></a></td>
     <td align="center"><a href="https://github.com/taejung2"><img src="https://avatars.githubusercontent.com/taejung2" width="100px;" alt=""/><br /><sub><b>taejung2</b></sub></a></td>
     <td align="center"><a href="https://github.com/minzx23"><img src="https://avatars.githubusercontent.com/minzx23" width="100px;" alt=""/><br /><sub><b>minzx23</b></sub></a></td>
     <td align="center"><a href="https://github.com/kuty2004"><img src="https://avatars.githubusercontent.com/kuty2004" width="100px;" alt=""/><br /><sub><b>kuty2004</b></sub></a></td>
@@ -26,10 +25,6 @@ TOEIC 대비를 준비하는 대학생들이 체계적으로 단어를 암기하
 
 
 #### 각 팀원들은 맡은 기능을 하이브리드로 진행
-
-- 김경우 
-  - 로그인 및 회원가입 : JWT를 이용한 보안처리 및 백엔드 스프링 시큐리티 사용
-  - 게시글 CRUD / 댓글 CRUD 구현
 
 
 - 박태정
@@ -47,14 +42,12 @@ TOEIC 대비를 준비하는 대학생들이 체계적으로 단어를 암기하
   
 - 강민주
   - 회의록 작성, 유스케이스 다이어그램 작성 ,프론트 구상
+  - 로그인 및 회원가입 : JWT를 이용한 보안처리 및 백엔드 스프링 시큐리티 사용
+  - 게시글 CRUD / 댓글 CRUD 구현
  
 ## 팀 pdf
 
 https://github.com/user-attachments/files/20715636/SE.4_202110906_.pptx
-
-
-## 시연영상
-  [영상 보러 가기](https://youtu.be/vCiUZxfTASI)
 
 
 
